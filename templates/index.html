@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL to Excel Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SQL to Excel Converter</h1>
+        <form method="POST">
+            <textarea name="sql_query" placeholder="Enter your SQL query here..." required></textarea>
+            <div class="buttons">
+                <button type="submit" name="download_tables">Download Table Names</button>
+                <button type="submit" name="download_columns">Download Table Columns</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
